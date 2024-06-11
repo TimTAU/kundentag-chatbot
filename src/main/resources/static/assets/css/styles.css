@@ -1,0 +1,63 @@
+header {
+    background-color: #666666;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+*::-webkit-scrollbar {
+	width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #b3b3b3;
+	border-radius: 6px;
+}
+
+@supports (-moz-appearance:none) {
+	* {
+		/*The following attributes are currently supported only by Firefox. Webkit browsers are designed by the ::-webkit-scrollbar
+		So that nothing is broken in potential future support, these values are set only for Firefox.*/
+		scrollbar-color: #b3b3b3 transparent;
+		scrollbar-width: thin;
+	}
+}
+
+.navbar-brand {
+    height: 50px;
+}
+
+#card-container {
+    max-width: 480px;
+}
+
+.card {
+    height: calc(100vh - 50px - 1.5rem - 1.5rem - 16px); /*Header - mt - mb - ?*/
+}
+
+.card-header {
+    background-color: #007a50;
+}
+
+#chat-container {
+    overflow: auto;
+}
+
+.chat-item {
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.chat-bot {
+    background-color: #F2F2F2;
+    color: #4D4D4D;
+    margin-right: 24px;
+}
+
+.chat-user {
+    background-color: #005C3C;
+    color: white;
+    margin-left: 24px;
+}
